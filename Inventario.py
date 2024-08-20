@@ -24,7 +24,8 @@ while True:
         break
 
     if opcion == "1":
-        nombre = input("Ingresa el nombre del producto: ")
+
+        nombre = input("Ingresa el nombre del producto a buscar: ").strip().lower()
         try:
             cantidad = int(input("Ingresa la cantidad: "))
             precio = float(input("Ingresa el precio: "))

@@ -19,13 +19,13 @@ while True:
     opcion = input("Elige una opción: ").strip()
 
     if opcion == "5":
-        print("Saliendo del programa...")
+        print("Saliendo del programa.")
         break
 
     if opcion == "1":
         nombre = input("Ingrese un nombre: ").strip()
         telefono = input("Ingrese el teléfono: ").strip()
-        contacto = Contacto(nombre, telefono)  # Correcto: Crear una instancia de Contacto
+        contacto = Contacto(nombre, telefono)  # Crear una instancia de Contacto
 
         # Agregar a la lista de contactos
         contactos.append(contacto)  # Agregar el objeto contacto a la lista
@@ -59,7 +59,7 @@ while True:
         nombre = input("Ingresa el nombre del contacto a eliminar: ").strip()
         for c in contactos:
             if c.nombre == nombre:
-                contactos.remove(c)  # Corregido aquí, se debe usar la lista 'contactos' para eliminar
+                contactos.remove(c)  # Se debe usar la lista 'contactos' para eliminar
                 print("Contacto eliminado.")
                 break
         else:
